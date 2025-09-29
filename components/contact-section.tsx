@@ -41,7 +41,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-slide-in-top">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Get In Touch
           </h2>
@@ -51,7 +51,7 @@ export function ContactSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
+          <div className="animate-slide-in-left">
             <h3 className="text-3xl font-semibold text-gray-900 mb-6">
               Let's Connect
             </h3>
@@ -88,7 +88,7 @@ export function ContactSection() {
               </div>
                <div className="flex items-center space">
   <a
-    href="https://linkedin.com/in/yourusername"
+    href="https://www.linkedin.com/in/kartik-vats-dev/"
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center space-y-2 space-x-3"
@@ -109,7 +109,9 @@ export function ContactSection() {
 </div>
                <div className="flex items-center space">
   <a
-    href="https://linkedin.com/in/yourusername"
+    
+    href="https://github.com/kartik-vats"
+
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center space-y-2 space-x-3"
@@ -131,7 +133,7 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-gray-50 p-8 rounded-2xl">
+          <div className="bg-gray-50 p-8 rounded-2xl animate-fade-in">
             <h4 className="text-xl font-semibold text-gray-900 mb-6">Send me a message</h4>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-2 gap-4">

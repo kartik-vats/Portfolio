@@ -125,8 +125,108 @@
 
  
 }
- body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+/* globals.css */
+html, body, #__next {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* globals.css */
+body {
+  background-color: #F9FAFB; /* Tailwind green-500 */
+}
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 1.5s ease forwards;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px); /* start from right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+
+  animation: slide-in-right 0.4s forwards;
+}
+/* Top-to-Bottom Slide Animation */
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* start above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-top {
+  animation: slide-in-top 1.5s ease forwards;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+/* Pure Fade-In Animation (no movement) */
+@keyframes fade-in {
+  from {
+    opacity: 0; /* invisible */
+  }
+  to {
+    opacity: 1; /* fully visible */
+  }
+}
+
+.animate-fade-in {
+  opacity: 0; /* initially hidden */
+  animation: fade-in 1.5s ease forwards;
+}
+
+/* Optional delays for staggered appearance */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Bottom-to-Top Slide Without Fade */
+@keyframes slide-up {
+  from {
+    transform: translateY(50px); /* start below */
+  }
+  to {
+    transform: translateY(0); /* final position */
+  }
+}
+
+.animate-slide-up {
+  transform: translateY(50px); /* start below */
+  animation: slide-up 1.5s ease forwards;
+}
+
+/* Optional delay classes */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
 

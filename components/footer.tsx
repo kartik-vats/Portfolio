@@ -3,9 +3,11 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiKaggle } from "react-icons/si";
 export default function Footer() {
   return (
-        <footer className="bg-gray-900 w-1/4 mx-auto rounded-xl py-1 mt-8 flex justify-between items-center">
+<footer className="fixed bottom-12 left-1/2 -translate-x-1/2 bg-gray-900 w-1/4 rounded-xl py-1 flex justify-between items-center shadow-lg animate-slide-up">
+  {/* content */}
+
       <a
-        href="https://www.linkedin.com/in/kartik-vats-6625a12a7/"
+        href="https://www.linkedin.com/in/kartik-vats-dev/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white hover:text-gray-400 p-2 rounded-full transition transform hover:scale-110"

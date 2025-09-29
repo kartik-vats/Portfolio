@@ -5,21 +5,25 @@ import { ExternalLink, Github } from 'lucide-react'
 
 export function ProjectsSection() {
   const projects = [
-    {
-      title: "Smart Allotment Portal – NIT KKR",
+    
+      {
+      title: "Better Netflix ",
       year: "2025",
-      description: "Developed a MERN stack portal for fair and efficient subject allotment at NIT KKR. Enabled smooth student-admin workflows with secure login and real-time updates, reaching 4000+ users in the first week.",
-      technologies: ["ReactJS", "Node.js", "Express", "MongoDB", "Nodemailer"],
-      liveLink: "https://your-live-demo-link.com",
-      githubLink: "https://github.com/your-github-repo"
+description: "Developed a full-stack Netflix clone with JWT authentication and admin controls. Integrated ImageKit HLS streaming, reducing load tim Scaled backend to handle 10,000+ concurrent requests.",
+      technologies: ["Next.js", "RJSF", "Vercel", "JSON Schema"],
+      liveLink: "https://netflix-roan-one-22.vercel.app",
+      githubLink: "https://github.com/kartik-vats/Netflix",
+      image:"/images/Netflix.png"
     },
+    
     {
       title: "Chai - Crowdfunding Social App",
-      year: "2024",
+      year: "2025",
       description: "Built a social crowdfunding platform with secure Google/GitHub login, Razorpay payments, and WebSocket-powered real-time chat. Features a friend system for connecting and collaborating on campaigns.",
       technologies: ["Next.js", "NextAuth", "Razorpay", "Vercel", "WebSockets"],
       liveLink: "https://chai-navy.vercel.app/",
-      githubLink: "https://github.com/kartik-vats/Chai"
+      githubLink: "https://github.com/kartik-vats/Chai",
+      image:"/images/chai_bg.jpg"
     },
     {
       title: "Code Helper (AI Code Reviewer)",
@@ -27,31 +31,34 @@ export function ProjectsSection() {
       description: "Created a code review assistant using the Gemini API for AI-driven suggestions. Integrated real-time feedback with a responsive MERN stack interface for quick and accurate code improvements.",
       technologies: ["MongoDB", "Express", "React", "Node.js", "Gemini API"],
       liveLink: "https://codehelper-1.onrender.com/",
-      githubLink: "https://github.com/kartik-vats/codehelper"
+      githubLink: "https://github.com/kartik-vats/codehelper",
+      image:"/images/codehelper.png"
     },
     {
-      title: "Dynamic Form Builder",
-      year: "2024",
-      description: "Developed a dynamic form builder with live preview and JSON Schema integration. Allows users to create, edit, and save structured forms with a clean, responsive interface on Vercel.",
-      technologies: ["Next.js", "RJSF", "Vercel", "JSON Schema"],
-      liveLink: "https://dynamic-form-gamma-three.vercel.app/",
-      githubLink: "https://github.com/kartik-vats/Dynamic-form"
-    }
+      title: "Smart Allotment Portal – NIT KKR",
+      year: "2025",
+      description: "Developed a MERN stack portal for fair and efficient subject allotment at NIT KKR. Enabled smooth student-admin workflows with secure login and real-time updates, reaching 4000+ users in the first week.",
+      technologies: ["ReactJS", "Node.js", "Express", "MongoDB", "Nodemailer"],
+      liveLink: "https://nitkkropen.vercel.app/",
+      githubLink: "https://github.com/kartik-vats/Open-Elective",
+      image:"/images/open_elective.png"
+    },
+    
   ]
 
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 animate-slide-in-top">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-top">
             A showcase of my recent work and projects that demonstrate my skills in full-stack development and modern technologies.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in">
           {projects.map((project, index) => (
             <div 
               key={index} 
@@ -60,7 +67,7 @@ export function ProjectsSection() {
             >
               {/* Project Image */}
               <img 
-                src={"/images/my-photo.png"} 
+                src={project.image} 
                 alt={project.title} 
                 className="w-full h-48 object-cover"
               />

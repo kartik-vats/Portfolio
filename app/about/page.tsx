@@ -1,11 +1,11 @@
 import { AboutSection } from "@/components/about-section";
 import { Navbar } from "@/components/navbar";
 
-export default function Home() {
+export default function About() {
   return (
-    <main className="min-h-screen">
-      <Navbar /> 
+    <>
+      <Navbar />
       <AboutSection />
-    </main>
-  )
+   </>
+  );
 }

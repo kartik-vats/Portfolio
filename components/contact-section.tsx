@@ -39,23 +39,21 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact " className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-in-top">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
-          </p>
+        
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="animate-slide-in-left">
+          <div className="animate-slide-in-left glass">
             <h3 className="text-3xl font-semibold text-gray-900 mb-6">
               Let's Connect
             </h3>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-white mb-8 leading-relaxed">
               Feel free to reach out if you have any questions, want to collaborate on a project, 
               or just want to say hello. I'll do my best to get back to you!
             </p>
@@ -67,7 +65,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
-                  <p className="text-gray-600">ks25152005@gmail.com</p>
+                  <p className="text-white">ks25152005@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -81,7 +79,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Location</p>
-                  <p className="text-gray-600">Kurukshetra, Haryana, India</p>
+                  <p className="text-white">Kurukshetra, Haryana, India</p>
                 </div>
               
              
@@ -133,8 +131,8 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-gray-50 p-8 rounded-2xl animate-fade-in">
-            <h4 className="text-xl font-semibold text-gray-900 mb-6">Send me a message</h4>
+          <div className="bg-white p-4 rounded-2xl animate-fade-in">
+            <h4 className="text-center text-xl font-semibold text-gray-900 mb-6">Message Me</h4>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>

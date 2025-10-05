@@ -26,7 +26,7 @@ export async function POST(request: { json: () => PromiseLike<{ name: any; email
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
 
-    return new Response(JSON.stringify({ success: true, message: "Message sent!" }), {
+    return new Response(JSON.stringify({ success: true, message: "Your message has been sent, I will try to respond asap!" }), {
       status: 200,
     });
   } catch (error) {

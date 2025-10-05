@@ -17,13 +17,13 @@ const navItems = [
 ];
 
   return (
-    <nav className=" fixed gap-4 mb-10 top-4 w-9/10 left-1/2 transform -translate-x-1/2  bg-gray-900/90 backdrop-blur-md rounded-xl shadow-lg z-50 ">
+    <nav className=" fixed gap-4 mb-10 top-4 w-15/20 left-1/2 transform -translate-x-1/2  bg-gray-900/90 backdrop-blur-md rounded-xl shadow-lg z-50 ">
       
       
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
         
         {/* Logo / Brand */}
-        <Link href="/"><div className="text-purple-500 font-extrabold text-2xl">KV</div></Link>
+        <Link href="/"><div className="text-blue-800 font-extrabold text-2xl">KV</div></Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-6 items-center">
@@ -31,7 +31,7 @@ const navItems = [
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center gap-4 text-white hover:text-purple-500 transition-colors duration-200 font-medium"
+              className="flex items-center gap-4 text-white hover:text-blue-800 transition-colors duration-200 font-medium"
             >
               <span>{item.icon}</span>
               {item.label}

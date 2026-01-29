@@ -27,16 +27,19 @@ export function HeroSection() {
           className="flex flex-col justify-center space"
         >
          <div className="glass ">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-gray-900 leading-tight typing1">
+          <div className="">  
+         <h1 className="text-2xl sm:text-3xl lg:text-4xl  font-bold text-slate-300 leading-tight typing1">
             Hello, I'm  
           </h1>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight typing2">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-300 leading-tight typing2">
             Kartik Vats
           </h1>
+          <br></br>
+            </div>
+          
           {/* Paragraph with delay */}
           <p className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed animate-slide-in-left animate-fade-in2">
-            I'm a computer science student with a passion for creating
-            beautiful and functional web applications using modern technologies.
+            I'm a computer science student at NIT Kurukshetra, passionate about building Web apps and exploring new eras of technology.
           </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-4 justify-center items-center animate-slide-in-left">

@@ -135,7 +135,7 @@ html, body, #__next {
 
 /* globals.css */
 body { 
-  background-image: url('/images/main_bg.png');
+  background-image: url('/images/image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,13 +288,27 @@ body {
 
 
 .glass {
- 
-  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
-  backdrop-filter: blur(10px);           /* blur effect */
-  -webkit-backdrop-filter: blur(10px);   /* for Safari */
-  border-radius: 12px;                    /* rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
-  padding: 20px 40px;                     /* spacing inside */
-  display: inline-block;                  /* shrink to content */
-  color: #fff;                            /* text color */
+  background: #111827;  /* tailwind gray-900 */
+  /* background: rgb(17, 24, 39);  same thing */
+
+  /* remove glass effects */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08); /* subtle soft border */
+  padding: 20px 40px;
+  display: inline-block;
+  color: #fff;
+}
+.white-glass {
+  background: #fff; 
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08); /* subtle soft border */
+  padding: 20px 40px;
+  display: inline-block;
+  color: #151127;
 }
